@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHvGYfBUEpQA2euM7ApdzZAYdKbcaDspAT1bQuZXk-YLkN1kGnogudz1J1N_11iUoPWY&usqp=CAU" type="image/icon type">
+    <title>Imgur</title>
+    <link rel="stylesheet" href="Landing.css">
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="nav-2 post">
+            <a href="https://imgur.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Imgur_Logo_Light.svg/1280px-Imgur_Logo_Light.svg.png" alt="imgur.logo" class="logo" />
+            </a>
+        
+            <button class="post_button">
+                <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg" alt="post" /><span> New Post</span>
+               
+            </button>
+            </a>
+        </div>
+       
+        <div class="nav-2">
+            <div>
+                <input type="text"  id="q" oninput="debounce(debouncing,1000)" placeholder="Images,#tags,@Users oh my!"/>
+                <br/>
+                <div id="debounce"></div>
+            </div>
+            
+            <button class="search" onclick="search()"><img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg" id="search"  /></button>
+        </div>
+        <div class="nav-2 account_main_div">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3oQ7x4YU1VPRcb5ACWWNfmRrdxfX4xHdyw&usqp=CAU" class="award"/>
+            <button class="ad_free">Go Ad-Free</button>
+            <button class="signIn">SignIn</button>
+            <button class="post_button">Signup</button>
+        </div>
+    </div>
+    <div class="snow" >
+        <p class="welcom_msg">You Deserve to smile today</p>
+        <div class="trending">
+            <div class="explore">
+                <span>Explore Tags</span>
+                <span id="show"></span>
+                <!-- <span id="show" onclick="view_more()">More Tags +</span>
+                <span id="hide" onclick="view_less()">Less Tags -</span> -->
+            </div>
+            <div id="explore_container" >
+
+            </div>
+           
+
+        </div>
+        <div class="selection_div">
+           
+            <select name="tags" class="selected" id="tagName" onchange="main_call()">
+                <option class="option" value="Most Viral">Most Viral</option>
+                <option class="option" selected value="USER SUBMITTED">USER SUBMITTED</option>
+                <option class="option" value="HIGHEST SCORING">HIGHEST SCORING</option>
+            </select>
+            
+            <select name="sort" class="selected" id="sortBy" onchange="fetchImages(value)">
+                <option class="option" value="POPULAR">POPULAR</option>
+                <option class="option"  value="RISING">RISING</option>
+                <option class="option" selected value="NEWEST">NEWEST</option>
+            </select>
+        </div>
+    </div>
+    <div class="items">
+        <div id="item_container">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        </div>
+
+    </div>
+    <div class="intersection"></div>
+</body>
+<script src="Landing.js"></script>
+<script src="infinite.js"></script>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHvGYfBUEpQA2euM7ApdzZAYdKbcaDspAT1bQuZXk-YLkN1kGnogudz1J1N_11iUoPWY&usqp=CAU" type="image/icon type">
+    <title>Imgur</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="Landing.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-2 post">
+            <a href="https://imgur.com/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Imgur_Logo_Light.svg/1280px-Imgur_Logo_Light.svg.png" alt="imgur.logo" class="logo" />
+            </a>
+        
+            <button class="post_button">
+                <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg" alt="post" /><span> New Post</span>
+               
+            </button>
+            </a>
+        </div>
+       
+        <div class="nav-2">
+            <div>
+                <input type="text"  id="q" oninput="debounce(debouncing,1000)" placeholder="Images,#tags,@Users oh my!"/>
+                <br/>
+                <div id="debounce"></div>
+            </div>
+            
+            <button class="search" onclick="search()"><img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-search.8d0f9b564a4659d48d8eca38b968a7f2.svg" id="search"  /></button>
+        </div>
+        <div class="nav-2 account_main_div">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3oQ7x4YU1VPRcb5ACWWNfmRrdxfX4xHdyw&usqp=CAU" class="award"/>
+            <button class="ad_free">Go Ad-Free</button>
+            <button class="signIn">SignIn</button>
+            <button class="post_button">Signup</button>
+        </div>
+    </div>
+    <!--Nav bar end-->
+
+    <div id="main_p">
+
+        <div id="profile_details">
+
+        </div>
+
+    </div>
+    <div id="photos">
+        <p>PHOTOS</p>
+        <div id="photos_container">
+            
+        </div>
+       
+    </div>
+    
+</body>
+<script src="account.js"></script>
+<script src="Landing.js"></script>
+</html>

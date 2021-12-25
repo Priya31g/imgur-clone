@@ -1,0 +1,100 @@
+body{
+  background-color:   #2e3035;
+}
+.flex_bar{
+    display: flex;
+    margin: 5%;
+   
+}
+
+.sidebar{
+    width: 20%;
+    flex: 0 0 60px;
+    z-index: 3;
+   color: white;
+}
+
+.EngagementBarContainer{
+    position: sticky;
+    top: 200px;
+    height: auto;
+    box-sizing: content-box;
+}
+.gallery_upvote{
+    border: 1px solid #464b57;
+    box-sizing: border-box;
+    border-radius: 4px;
+    max-height: 264px;
+}
+.gallery_up_btn{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    margin: 34% 11%;
+}
+.gallery_up_btn>img{
+     position: relative; 
+    margin: 5% 11%;
+}
+
+.gallery_score{
+    font-size: 15px;
+    line-height: 12px;
+    opacity: 1;
+    text-align: center;
+    transition: opacity .15s linear;
+    font-family: Proxima Nova Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    letter-spacing: .05em;
+}
+
+.gallery_share{
+    height: 72px;
+    box-sizing: border-box;
+    padding: 8px 0;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    margin-bottom: 32px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.gallery_comment{
+    border: 1px solid #464b57;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 74px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px;
+}
+.span{
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 6px;
+    font-family: Proxima Nova Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    letter-spacing: .05em;
+}
+
+#image{
+    margin: 2% 15%;
+
+}
+#profile{
+    margin: 2%;
+}
+#profile>img:hover{
+    transform: scale(1.5);
+
+}
+#profile>p{
+    margin: 0% 2%;
+    text-align: center;
+    font-size: 20px;
+}
+#pp_img:hover{
+    transform: scale(1.5);
+}
